@@ -5,10 +5,10 @@ terraform {
       version = "~> 5.0"
     }
   }
-  
+
   # Зберігання tfstate у Google Cloud Storage
   backend "gcs" {
-    bucket = "kravchuk-bucket" 
+    bucket = "kravchuk-bucket"
     prefix = "terraform/state"
   }
 }
